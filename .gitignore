@@ -1,0 +1,6 @@
+tensorflow/
+*.deb
+install_cuDNN.sh
+nvidia_preinstallation.sh
+postinstallation_script.sh
+purge_nvidia_DL_libs.sh
