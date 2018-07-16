@@ -8,8 +8,12 @@
 >
 >3. Run ```./install_nvidia_components.sh``` to install CUDA 9.0, cuDNN 7.1 and Nvidia graphic drivers.
 >
->4. Reboot your system to complete the installation.
+>4. Reboot the system to complete the installation.
 >
->5. Run ```. ./install_TF.sh``` command to install and validate Tensorflow and Keras.
+>5. Run ```source ./install_TF.sh``` command to install and validate Tensorflow and Keras.
+>
+>6. Post step 5 virtual environment will be activated. Run ```deactivate``` command to exit the same. It can be activated again by running ```source ./tensorflow/venv/bin/activate```.
 
-* **Note:** Nvidia drivers are installed during CUDA installation.
+* **Note:**
+  * Nvidia drivers are installed during CUDA installation.
+  * The virtual environment will be created under **./tensorflow/venv**. This path can be changed in *install_TF.sh* script.

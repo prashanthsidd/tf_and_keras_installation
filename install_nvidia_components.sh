@@ -40,7 +40,10 @@ sudo apt-get install cuda-command-line-tools-9-0
 
 
 # Adding required env variables to .bashrc
-echo 'export PATH=/usr/local/cuda-9.2/bin${PATH:+:${PATH}}' >> ~/.bashrc
-echo 'export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
+echo >> ~/.bashrc
+echo 'Added for tensorflow and keras installation' >> ~/.bashrc
+echo 'export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/lib/nvidia-396${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
 
 echo "\n Installation complete! Please reboot the system...."
